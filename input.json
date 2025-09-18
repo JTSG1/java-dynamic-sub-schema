@@ -12,7 +12,12 @@
       "data" : {
         "field1" : "field1-value",
         "field2" : "field2-value",
-        "superField3" : "THIS IS SUPER"
+        "transactions" : [
+          {
+            "description" : "Transaction-1",
+            "amount" : 12.54
+          }
+        ]
       }
     }
   }

@@ -2,9 +2,9 @@ package digital.tesh.json2xml;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import digital.tesh.json2xml.pojo.Task;
-import digital.tesh.json2xml.pojo.sub.ComplexSchema;
+import digital.tesh.json2xml.pojo.sub.complexSchema.ComplexSchema;
 import digital.tesh.json2xml.pojo.inputData.InputData;
-import digital.tesh.json2xml.pojo.sub.SimpleSchema;
+import digital.tesh.json2xml.pojo.sub.simpleSchema.SimpleSchema;
 import digital.tesh.json2xml.pojo.inputData.Payload;
 import digital.tesh.json2xml.pojo.inputData.Recipient;
 import digital.tesh.json2xml.services.SchemaGenerateService;

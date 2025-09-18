@@ -13,6 +13,8 @@
 
   <xs:element name="task" type="task"/>
 
+  <xs:element name="transaction" type="transaction"/>
+
   <xs:complexType name="task">
     <xs:sequence>
       <xs:element name="taskName" type="xs:string" minOccurs="0"/>
@@ -47,7 +49,14 @@
     <xs:sequence>
       <xs:element name="field1" type="xs:string" minOccurs="0"/>
       <xs:element name="field2" type="xs:string" minOccurs="0"/>
-      <xs:element name="superField3" type="xs:string" minOccurs="0"/>
+      <xs:element name="transactions" type="transaction" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="transaction">
+    <xs:sequence>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="amount" type="xs:float" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 

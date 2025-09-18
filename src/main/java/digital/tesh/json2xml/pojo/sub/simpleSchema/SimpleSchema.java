@@ -1,4 +1,4 @@
-package digital.tesh.json2xml.pojo.sub;
+package digital.tesh.json2xml.pojo.sub.simpleSchema;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -11,15 +11,12 @@ import lombok.Setter;
 @Setter
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ComplexSchema {
+public class SimpleSchema {
 
     @XmlElement
     private String field1;
 
     @XmlElement
     private String field2;
-
-    @XmlElement
-    private String superField3;
 
 }

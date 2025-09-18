@@ -1,8 +1,7 @@
-package digital.tesh.json2xml.pojo.sub;
+package digital.tesh.json2xml.pojo.sub.complexSchema;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,12 +10,9 @@ import lombok.Setter;
 @Setter
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class SimpleSchema {
+public class Transaction {
 
-    @XmlElement
-    private String field1;
-
-    @XmlElement
-    private String field2;
+    private String description;
+    private Float amount;
 
 }
