@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="complexSchema" type="complexSchema"/>
+
+  <xs:element name="inputData" type="inputData"/>
+
+  <xs:element name="payload" type="payload"/>
+
+  <xs:element name="recipient" type="recipient"/>
+
+  <xs:element name="simpleSchema" type="simpleSchema"/>
+
+  <xs:element name="task" type="task"/>
+
+  <xs:complexType name="task">
+    <xs:sequence>
+      <xs:element name="taskName" type="xs:string" minOccurs="0"/>
+      <xs:element name="taskId" type="xs:string" minOccurs="0"/>
+      <xs:element ref="inputData" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="inputData">
+    <xs:sequence>
+      <xs:element ref="recipient" minOccurs="0"/>
+      <xs:element ref="payload" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recipient">
+    <xs:sequence>
+      <xs:element name="customerId" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="payload">
+    <xs:sequence>
+      <xs:element name="dataSchema" type="xs:string" minOccurs="0"/>
+      <xs:element name="version" type="xs:int" minOccurs="0"/>
+      <xs:element name="dataType" type="xs:string" minOccurs="0"/>
+      <xs:element name="data" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="complexSchema">
+    <xs:sequence>
+      <xs:element name="field1" type="xs:string" minOccurs="0"/>
+      <xs:element name="field2" type="xs:string" minOccurs="0"/>
+      <xs:element name="superField3" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="simpleSchema">
+    <xs:sequence>
+      <xs:element name="field1" type="xs:string" minOccurs="0"/>
+      <xs:element name="field2" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,18 @@
+{
+  "taskName" : "myTask",
+  "taskId" : null,
+  "inputData" : {
+    "recipient" : {
+      "customerId" : "ABC123"
+    },
+    "payload" : {
+      "dataSchema" : "simpleSchema",
+      "version" : 1,
+      "dataType" : "application/json",
+      "data" : {
+        "field1" : "field1-value",
+        "field2" : "field2-value"
+      }
+    }
+  }
+}
