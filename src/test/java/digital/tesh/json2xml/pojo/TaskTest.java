@@ -1,8 +1,8 @@
 package digital.tesh.json2xml.pojo;
 
-import digital.tesh.json2xml.pojo.payloads.InputData;
-import digital.tesh.json2xml.pojo.payloads.common.Payload;
-import digital.tesh.json2xml.pojo.payloads.common.Recipient;
+import digital.tesh.json2xml.pojo.inputData.InputData;
+import digital.tesh.json2xml.pojo.inputData.Payload;
+import digital.tesh.json2xml.pojo.inputData.Recipient;
 import org.junit.Before;
 import org.junit.Test;
 

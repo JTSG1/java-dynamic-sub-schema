@@ -1,6 +1,5 @@
-package digital.tesh.json2xml.pojo;
+package digital.tesh.json2xml.pojo.inputData;
 
-import digital.tesh.json2xml.pojo.inputData.InputData;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -8,19 +7,13 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.Getter;
 import lombok.Setter;
 
+@XmlRootElement
 @Getter
 @Setter
-@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Task<T> {
+public class Recipient{
 
     @XmlElement
-    private String taskName;
+    private String customerId;
 
-    @XmlElement
-    private String taskId;
-
-    @XmlElement
-    private InputData<T> inputData;
-
-}
+};

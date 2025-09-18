@@ -1,9 +1,9 @@
-package digital.tesh.json2xml.pojo.payloads.common;
+package digital.tesh.json2xml.pojo.inputData;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import digital.tesh.json2xml.pojo.payloads.ComplexSchema;
-import digital.tesh.json2xml.pojo.payloads.SimpleSchema;
+import digital.tesh.json2xml.pojo.sub.ComplexSchema;
+import digital.tesh.json2xml.pojo.sub.SimpleSchema;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;

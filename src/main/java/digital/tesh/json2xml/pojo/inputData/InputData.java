@@ -1,4 +1,4 @@
-package digital.tesh.json2xml.pojo.payloads;
+package digital.tesh.json2xml.pojo.inputData;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -11,15 +11,12 @@ import lombok.Setter;
 @Setter
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ComplexSchema {
+public class InputData<T> {
 
     @XmlElement
-    private String field1;
+    private Recipient recipient;
 
     @XmlElement
-    private String field2;
-
-    @XmlElement
-    private String superField3;
+    private Payload<T> payload;
 
 }

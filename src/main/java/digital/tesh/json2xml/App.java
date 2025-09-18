@@ -1,17 +1,15 @@
 package digital.tesh.json2xml;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import digital.tesh.json2xml.pojo.Task;
-import digital.tesh.json2xml.pojo.payloads.ComplexSchema;
-import digital.tesh.json2xml.pojo.payloads.InputData;
-import digital.tesh.json2xml.pojo.payloads.SimpleSchema;
-import digital.tesh.json2xml.pojo.payloads.common.Payload;
-import digital.tesh.json2xml.pojo.payloads.common.Recipient;
+import digital.tesh.json2xml.pojo.sub.ComplexSchema;
+import digital.tesh.json2xml.pojo.inputData.InputData;
+import digital.tesh.json2xml.pojo.sub.SimpleSchema;
+import digital.tesh.json2xml.pojo.inputData.Payload;
+import digital.tesh.json2xml.pojo.inputData.Recipient;
 import digital.tesh.json2xml.services.SchemaGenerateService;
 import jakarta.xml.bind.JAXBException;
 
-import javax.sound.midi.Receiver;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
