@@ -1,6 +1,8 @@
 # java-dynamic-sub-schema
 
-This project converts JSON input into XML using dynamically selected sub-schemas.
+java-dynamic-sub-schema is a Java application that converts JSON input into XML by dynamically selecting and applying sub-schemas at runtime.
+
+The project demonstrates a schema-driven approach where different XML structures are generated from the same JSON model depending on configuration and payload structure.
 
 **Prerequisites**
 
